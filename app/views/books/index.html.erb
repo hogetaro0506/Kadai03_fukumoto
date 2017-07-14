@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<body>
+<h1>福本 晶＿第三回課題</h1>
+<% @books.each do |book| %>
+    <section>
+      <a href=""><img src="" style="width: 171px;height: 250px;"></a>
+      <p>題名：<%= book.title %></p>
+      <p>説明：<%= book.description %></p>
+      <p>評価：<%= book.rate %></p>
+      <p>価格：<%= book.price %>円</p>
+        <%= link_to '詳細', book %>
+    </section>
+
+    <% end %>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
+</body>

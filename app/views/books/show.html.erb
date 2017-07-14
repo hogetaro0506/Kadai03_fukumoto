@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<a href=""><img src="" style="width: 300px;height: 400px;"></a>
+
+<p>
+  <strong>題名:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>説明:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
+  <strong>評価:</strong>
+  <%= @book.rate %>
+</p>
+
+<p>
+  <strong>価格:</strong>
+  <%= @book.price %>
+</p>
+
+<%= link_to 'Back', books_path %>
